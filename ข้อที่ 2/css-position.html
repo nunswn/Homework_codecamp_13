@@ -14,19 +14,29 @@
         .relative { position: relative;}
         .fixed { position: fixed;}
         .top { top:0 }
-        .left { left: 9}
+        .left { left: 0}
         .right { right: 0}
-        .bottom { bottom: 9}
+        .bottom { bottom: 0}
         .center { left:50%; top:50%; transform: translate(-50%, -50%); }
         .red { background-color: red;}
         .green { background-color: green;}
         .blue { background-color: blue;}
-        .yellow { background-color: yellow; }
+        .yellow { background-color: yellow;}
         .pink { background-color: deeppink;}
         .white { background-color: white;}
         </style>
 </head>
 <body>
-    
+    <div class="absolute small red left top"></div>
+    <div class="absolute small green right top"></div>
+    <div class="absolute small yellow right bottom"></div>
+    <div class="absolute small blue left bottom"></div>
+    <div class="fixed big white center">
+        <div class="fixed inside red left top"></div>
+        <div class="fixed inside green right top"></div>
+        <div class="fixed inside yellow right bottom"></div>
+        <div class="fixed inside blue left bottom"></div>
+        <div class="relative inside pink center"></div>
+    </div>
 </body>
 </html>
