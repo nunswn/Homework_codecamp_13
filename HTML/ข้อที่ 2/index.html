@@ -4,9 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Booking</title>
+    <style>
+        * {
+            padding: 0; 
+            margin: 0; 
+            box-sizing: border-box;
+        }
+        div {
+            margin: 20px;
+        }
+        fieldset {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            padding: auto;
+            width: 30%;
+        }
+        input, select, label{
+            margin: -5px auto;
+        }
+        input {
+            width: 100px;
+            height: 30px;
+        }
+        select {
+            width: 100px;
+            height: 30px;
+        }
+        input :focus {
+            border: 3px solid #555;
+        }
+        button {
+            margin: auto;
+            width: 120px;
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 15px 32px;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        button:hover {
+        background-color: red;
+        color: white;
+}
+    </style>
 </head>
 <body>
-    
+    <div>
+        <h1 style="text-align: center;">Book Flight</h1>
+    </div>
+    <form>
+        <fieldset>
+            <legend style="font-weight: bold; color: blue;">Booking</legend><br>
+            <label>Flying from</label><br>
+            <select>
+                <option></option>
+                <option>BKK</option>
+                <option>HDY</option>
+            </select>
+            <br>
+            <label>To</label><br>
+            <select>
+                <option></option>
+                <option>HDY</option>
+                <option>BKK</option>
+            </select>
+            <br>
+            <label>Departing</label><br>
+            <input type="date"/><br>
+            <label>Returning</label><br>
+            <input type="date"/><br>
+            <label>Adult</label><br>
+            <input type="number" value="0" min="1"><br>
+            <label>Child</label><br>
+            <input type="number" value="0" min="1"><br>
+            <label>Infant</label><br>
+            <input type="number" value="0" min="1"><br>
+            <label style="color: orange;">Currency</label><br>
+            <select>
+                <option></option>
+                <option>THB</option>
+                <option>USD</option>
+            </select>
+            <br>
+            <button type="button">SEARCH</button><br>
+        </fieldset>
+    </form>
 </body>
 </html>
