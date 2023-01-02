@@ -4,9 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Phonebook</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+        }
+        table, th ,td {
+            margin: auto;
+            width: 30%;
+            text-align: center;
+            border: 1px dotted red;
+        }
+        @media screen and (max-width: 800px) {
+            table, th ,td {
+                margin: auto;
+                width: 45%;
+                text-align: center;
+                border: 1px dotted red;
+            }
+        }
+        @media screen and (max-width: 450px) {
+            table, th ,td {
+                margin: auto;
+                width: 60%;
+                text-align: center;
+                border: 1px dotted red;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Phonebook</h1>
+    <div>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Tel no.</th>
+            </tr>
+            <tr>
+                <td>TA Tle</td>
+                <td>083-4284942</td>
+            </tr>
+            <tr>
+                <td>KFC</td>
+                <td>1150</td>
+            </tr>
+            <tr>
+                <td>Pizza Hut</td>
+                <td>1112</td>
+            </tr>
+            <tr>
+                <td>Yayoi-ยาโยอิ</td>
+                <td>1642</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
